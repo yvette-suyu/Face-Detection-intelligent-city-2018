@@ -1,22 +1,29 @@
-def bb_intersection_over_union(boxA, boxB):
-    # determine the (x, y)-coordinates of the intersection rectangle
-    xA = max(boxA[0], boxB[0])
-    yA = max(boxA[1], boxB[1])
-    xB = min(boxA[2], boxB[2])
-    yB = min(boxA[3], boxB[3])
+def IoU(box, boxes):
+    """Compute IoU between detect box and gt boxes
 
-    # compute the area of intersection rectangle
-    interArea = (xB - xA + 1) * (yB - yA + 1)
+    Parameters:
+    ----------
+    box: numpy array , shape (5, ): x1, y1, x2, y2, score
+        input box
+    boxes: numpy array, shape (n, 4): x1, y1, x2, y2
+        input ground truth boxes
 
-    # compute the area of both the prediction and ground-truth
-    # rectangles
-    boxAArea = (boxA[2] - boxA[0] + 1) * (boxA[3] - boxA[1] + 1)
-    boxBArea = (boxB[2] - boxB[0] + 1) * (boxB[3] - boxB[1] + 1)
+    Returns:
+    -------
+    ovr: numpy.array, shape (n, )
+        IoU
+    """
+    box_area = (box[2] - box[0] + 1) * (box[3] - box[1] + 1)
+    area = (boxes[:, 2] - boxes[:, 0] + 1) * (boxes[:, 3] - boxes[:, 1] + 1)
+    xx1 = np.maximum(box[0], boxes[:, 0])
+    yy1 = np.maximum(box[1], boxes[:, 1])
+    xx2 = np.minimum(box[2], boxes[:, 2])
+    yy2 = np.minimum(box[3], boxes[:, 3])
 
-    # compute the intersection over union by taking the intersection
-    # area and dividing it by the sum of prediction + ground-truth
-    # areas - the interesection area
-    iou = interArea / float(boxAArea + boxBArea - interArea)
+    # compute the width and height of the bounding box
+    w = np.maximum(0, xx2 - xx1 + 1)
+    h = np.maximum(0, yy2 - yy1 + 1)
 
-    # return the intersection over union value
-    return iou
+    inter = w * h
+    ovr = inter / (box_area + area - inter)
+    return ovr
