@@ -5,3 +5,5 @@ Reference:
 
 1.Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks
 https://kpzhang93.github.io/MTCNN_face_detection_alignment/index.html?from=timeline&isappinstalled=1
+2.facenet
+https://github.com/davidsandberg/facenet/wiki
