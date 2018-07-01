@@ -11,11 +11,14 @@ https://github.com/davidsandberg/facenet/wiki
 
 学习记录：https://blog.csdn.net/github_38657489
 
-
+3.
 http://code.activestate.com/recipes/576689-copy-move-forgery-detection-in-images/
 
 https://www5.cs.fau.de/research/software/copy-move-forgery-detection/
 
-论文翻译
+4.论文翻译
 Exposing Digital Forgeries by Detecting Duplicated Image Regions http://www.ists.dartmouth.edu/library/102.pdf
 https://blog.csdn.net/github_38657489/article/details/80789988
+
+5.Face Attention Network: An Effective Face Detector for the Occluded Faces
+https://arxiv.org/pdf/1711.07246.pdf
