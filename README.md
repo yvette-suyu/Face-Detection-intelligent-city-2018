@@ -22,3 +22,9 @@ https://blog.csdn.net/github_38657489/article/details/80789988
 
 5.Face Attention Network: An Effective Face Detector for the Occluded Faces
 https://arxiv.org/pdf/1711.07246.pdf
+
+6.图像特征提取三大法宝：HOG特征、LBP特征、Haar-like特征
+https://blog.csdn.net/q123456789098/article/details/52748918
+
+7.Dlib 实现人脸的68点检测
+https://blog.csdn.net/qq_15807167/article/details/68944673
