@@ -93,10 +93,16 @@ if __name__ == '__main__':
     print('crop to parts')
     croppart(landmark,filepath)
     # original image color
-    print('here cv')
-    ori_acv=[]
-    ori_acv.append(colorvalue(im_path))
-    print('original is',ori_acv)
+
+    newimg=im.copy()
+    cv2.imwrite(orifilepath+'xx.png',newimg)
+    orichara=[]
+    oripath=orifilepath+'xx.png'
+    color_value.append(colorvalue(oripath))
+    orichara.append(color_value)
+    color_value=[]
+    print(orichara)
+
 
     rootdir = filepath
     list = os.listdir(rootdir)
