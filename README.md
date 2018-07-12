@@ -28,3 +28,6 @@ https://blog.csdn.net/q123456789098/article/details/52748918
 
 7.Dlib 实现人脸的68点检测
 https://blog.csdn.net/qq_15807167/article/details/68944673
+
+8.opencv 特征提取
+http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_features_meaning/py_features_meaning.html
