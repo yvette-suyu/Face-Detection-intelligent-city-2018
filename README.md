@@ -31,3 +31,9 @@ https://blog.csdn.net/qq_15807167/article/details/68944673
 
 8.opencv 特征提取
 http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_features_meaning/py_features_meaning.html
+
+9.FaceDataset常用的人脸数据库
+https://blog.csdn.net/haoji007/article/details/52775598
+
+10.paper Deep Face Recognition
+http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf
